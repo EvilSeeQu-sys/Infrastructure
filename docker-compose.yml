@@ -8,3 +8,12 @@ services:
       - "8880:8080"
       - "50000:50000"
     restart: always
+
+  sonarqube:
+    image: sonarqube:10.2.1-community
+    container_name: sonarqube
+    depends_on:
+      - jenkins
+    ports:
+      - "9000:9000"
+    restart: always
