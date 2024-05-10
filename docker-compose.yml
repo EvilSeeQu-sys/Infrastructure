@@ -8,6 +8,9 @@ services:
       - "8880:8080"
       - "50000:50000"
     restart: always
+    volumes:
+      - ./jenkins_controller/jenkins.yaml:/usr/share/jenkins/ref/jenkins.yaml
+
 
   sonarqube:
     image: sonarqube:10.2.1-community
