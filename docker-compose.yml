@@ -10,9 +10,9 @@ services:
     restart: always
     volumes:
       - ./jenkins_controller/jenkins.yaml:/usr/share/jenkins/ref/jenkins.yaml
-    depends_on:
-      artifactory:
-        condition: service_healthy
+  #  depends_on:
+  #    artifactory:
+  #      condition: service_healthy
 
 
   sonarqube:
