@@ -8,7 +8,7 @@ pipelineJob('frontend') {
                         url("https://github.com/EvilSeeQu-sys/Frontend")
                     }
                     branches('main')
-                    scriptPath('JenkinsPipe')
+                    scriptPath('Jenkinsfile')
                 }
             }
         }
