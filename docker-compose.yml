@@ -8,6 +8,7 @@ services:
     restart: always
     volumes:
       - ./jenkins_controller/jenkins.yaml:/usr/share/jenkins/ref/jenkins.yaml
+      - ./jenkins_controller/jobs:/usr/share/jenkins/ref/jobs
   #  depends_on:
   #    artifactory:
   #      condition: service_healthy
